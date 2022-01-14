@@ -1,0 +1,68 @@
+/* css "reset" */
+body, h1, p, span, div, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--very-dark-blue-body-bg);
+    font-size: 18px;
+}
+
+:root {
+    /* Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --very-dark-blue-body-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.card {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 335px;
+    height: auto;
+    padding: 20px;
+    background-color: var(--very-dark-blue-card-bg);
+    display: grid;
+    margin-top: 8rem;
+}
+
+.container-image {
+    position: relative;
+
+}
+
+.card-main-image {
+    max-width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+.view-icon {
+    width: 295px;
+    height: 295px;
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0,255, 247, 50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+    top: 0;
+    border-radius: 6px;
+}
+
+.view-icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: var(--cyan);
+    cursor:pointer;
+}
+

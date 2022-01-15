@@ -6,7 +6,9 @@ body, h1, p, span, div, img {
 
 body {
     background: var(--very-dark-blue-body-bg);
-    font-size: 18px;
+    font-size: 16px;
+    margin-top: 3rem;
+    font-family: "Outfit";
 }
 
 :root {
@@ -27,19 +29,23 @@ body {
     height: auto;
     padding: 20px;
     background-color: var(--very-dark-blue-card-bg);
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgba(0,0,0,0.3);;
+}
+
+.content {
     display: grid;
-    margin-top: 8rem;
+    gap: 20px;
 }
 
 .container-image {
     position: relative;
-
 }
 
 .card-main-image {
     max-width: 100%;
     display: block;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 .view-icon {
@@ -53,7 +59,7 @@ body {
     opacity: 0;
     transition: .5s;
     top: 0;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 .view-icon:hover {
@@ -61,8 +67,76 @@ body {
     cursor: pointer;
 }
 
+.view-icon:focus {
+    opacity: 1;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 600;
+}
+
 h1:hover {
     color: var(--cyan);
     cursor:pointer;
 }
 
+h1:focus {
+    color: var(--cyan);
+}
+
+.description {
+    color: var(--soft-blue);
+    line-height: 1.6;
+}
+
+.price-date {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--very-dark-blue-line);
+    padding-bottom: 15px;
+}
+
+.price {
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.date {
+    color: var(--soft-blue);
+}
+
+.price-date img {
+    vertical-align: -3px;
+}
+
+.user-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: var(--soft-blue);
+}
+
+.user-info img {
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    width: 30px;
+}
+
+.user-info span {
+    color: var(--white);
+    transition: .5s;
+}
+
+.user-info span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.user-info span:focus {
+    color: var(--cyan);
+}
+
+footer {
+    text-align: center;
+}

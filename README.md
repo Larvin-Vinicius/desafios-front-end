@@ -36,7 +36,7 @@ Os usuários devem ser capazes de:
    
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Larvin-Vinicius/nft-preview-card-component-pratica)
+- Solution URL: [Add solution URL here](https://github.com/Larvin-Vinicius/nft-preview-card-component-praticle)
 
 - Live Site URL: [Add live site URL here](https://wg57u.csb.app/)
 
